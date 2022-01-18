@@ -30,7 +30,7 @@ mentorRouter.post('/',async (req,res) => {
     }
 })
 /* get mentor based on ID */
-mentorRouter.get('/mentors/:id',async (req,res) => {
+mentorRouter.get('/get-mentor/:id',async (req,res) => {
     const {id} = req.params;
     console.log(req.params)
     try{
