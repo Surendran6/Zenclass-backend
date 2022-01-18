@@ -25,9 +25,16 @@ const URL = process.env.MONGODB_URL;
 })
 
 app.get('/',(req,res) => res.send(`
+
 <div>
 <p> In Home Page </p>
-
+<p>To get all mentor List - https://zen-mentor-backend.herokuapp.com/Mentors </p>
+<br>
+<p>To get all Students List - https://zen-mentor-backend.herokuapp.com/Students </p>
+<br>
+<p>To get mentor based on ID - https://zen-mentor-backend.herokuapp.com/Mentors/get-mentor/:id<p>
+<p>sample - https://zen-mentor-backend.herokuapp.com/Mentors/get-mentor/61e51dd0a315f90534c6c2a6 </p>
+<p> To test Post and update - visit Frontend page of the application - https://condescending-wescoff-6d0593.netlify.app/ </p>
 </div>
 `))
 
